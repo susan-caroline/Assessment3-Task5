@@ -1,0 +1,381 @@
+﻿<html>
+<head>
+    <title> Susan Caroline 8476512 Website </title>
+	
+	<script> 
+
+/* Task 4 JavaScript */
+
+		function showMessage(messageId, imageId, displayText) {
+			var messageFields = ["catmessage", "dogmessage", "frogmessage"];
+			messageFields.forEach(function(field) {
+				document.getElementById(field).style.display = "none";
+			});
+			document.getElementById(messageId).style.display = "block";
+			
+			var displayField = document.getElementById("display");
+			displayField.value = displayText;
+			
+			var imageFields = ["cat-img", "dog-img", "frog-img"];
+			imageFields.forEach(function(field) {
+				document.getElementById(field).style.display = "none";
+			});
+			document.getElementById(imageId).style.display = "block";
+		}
+
+		function Cat() {
+			showMessage("catmessage", "cat-img", "User clicks cat");
+			var tag = document.getElementById("cat-img");
+			tag.style.display = "block";
+			document.getElementById("dog-img").style.display = "none";
+			document.getElementById("frog-img").style.display = "none";
+			document.getElementById("colourchangecat").style.background = "yellow"; // Change button color
+			document.getElementById("colourchangedog").style.background = ""; // Reset button color
+			document.getElementById("colourchangefrog").style.background = ""; // Reset button color
+			var displayField = document.getElementById("display");
+			displayField.value = "User clicks cat";
+			var messageField = document.getElementById("catmessage");
+			messageField.textContent = "Cat is clicked (Image Source: https://www.behance.net/gallery/117097689/Cat-Lady-portrait)";
+		}
+
+		function Dog() {
+			showMessage("dogmessage", "dog-img", "User clicks dog");
+			var tag = document.getElementById("dog-img");
+			tag.style.display = "block";
+			document.getElementById("cat-img").style.display = "none";
+			document.getElementById("frog-img").style.display = "none";
+			document.getElementById("colourchangecat").style.background = ""; // Reset button color
+			document.getElementById("colourchangedog").style.background = "orange"; // Change button color
+			document.getElementById("colourchangefrog").style.background = ""; // Reset button color
+			var displayField = document.getElementById("display");
+			displayField.value = "User clicks dog";
+			var messageField = document.getElementById("dogmessage");
+			messageField.textContent = "Dog is clicked (Image Source: https://www.astridbrisson.com/post/manage-your-blog-from-your-live-site)";
+		}
+
+		function Frog() {
+			showMessage("frogmessage", "frog-img", "User clicks frog");
+			var tag = document.getElementById("frog-img");
+			tag.style.display = "block";
+			document.getElementById("cat-img").style.display = "none";
+			document.getElementById("dog-img").style.display = "none";
+			document.getElementById("colourchangecat").style.background = ""; // Reset button color
+			document.getElementById("colourchangedog").style.background = ""; // Reset button color
+			document.getElementById("colourchangefrog").style.background = "lightgreen"; // Change button color
+			var displayField = document.getElementById("display");
+			displayField.value = "User clicks frog";
+			var messageField = document.getElementById("frogmessage");
+			messageField.textContent = "Frog is clicked (Image Source: https://www.pinterest.de/pin/805299977114602519/)";
+		}
+	
+	</script>
+	
+	<style> 
+
+/* Task 1 CSS */
+
+		.task1-text {
+			background-color: green;
+			padding: 10px;
+			color: white;
+			font-size: 25px;
+			border: 12px solid orange;
+			text-decoration: underline;
+			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			width: 600px;
+		}
+
+/* Task 2 CSS */
+
+		#UOW-calendar-table {
+			border-collapse: collapse;
+			border: 2px solid darkmagenta;
+			font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+
+		#UOW-calendar-table th, #UOW-calendar-table td {
+			border: 3px dashed darkmagenta;
+			padding: 8px;
+			text-align: left;
+		}
+
+		#UOW-calendar-table th:nth-child(2),
+		#UOW-calendar-table td:nth-child(2){
+			width: 350px;
+		}
+
+		#UOW-calendar-table th {
+			background-color: darkslateblue;
+			color: white;
+		}
+
+		#UOW-calendar-table tr:nth-child(odd) {
+			background-color: lightyellow;
+		}
+
+		#UOW-calendar-table tr:nth-child(even) {
+			background-color: lightblue;
+		}
+
+		#UOW-calendar-table tr:nth-child(odd) td {
+			color: darkolivegreen;
+		}
+
+		#UOW-calendar-table tr:nth-child(even) td {
+			color: navy;
+		}
+
+
+/* Task 3 CSS */ 
+
+		#web-attacks-table {
+            border-collapse: collapse;
+            width: 1200px;
+            border: 10px solid green;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        #web-attacks-table th,
+        #web-attacks-table td {
+            padding: 8px;
+            text-align: left;
+			border: 4px dotted;
+			border-color: green;
+        }
+
+        #web-attacks-table th {
+            background-color: lightgreen;
+            color: grey;
+			border-color: green;
+			border-width: 4px;
+            font-weight: bold;
+        }
+
+        #web-attacks-table td {
+            background-color: lightblue;
+            color: teal;
+			width: 300px
+        }
+
+		#web-attacks-table th:nth-child(2),
+		#web-attacks-table td:nth-child(2) {
+			width: 900px;
+		}
+    
+		#web-attacks-table img {
+			width: 300px;
+		}
+
+
+	</style>
+	
+</head>
+
+<body>
+    <h1> Susan Caroline 8476512 WEBSITE</h1>
+	<br> 
+
+	<h1> Task 1 </h1>
+		
+		<div class="task1-text">
+			<h2> 8476 512 Susan Caroline </h2>
+			<h3> COMP804: Web Security </h3>
+			<H4> Assignment 3, due Monday 21 August 2023 at 11pm </H4>
+		</div>
+		<br>
+
+
+	<h1> Task 2 </h1>
+	
+		<table id="UOW-calendar-table">
+		<thead>
+			<tr>
+				<th>Activity</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>First day to enrol for re-enrolling (continuing students)</td>
+				<td>21 Nov 2022</td>
+			</tr>
+			<tr>
+				<td>Orientation</td>
+				<td>18 Jul 2023</td>
+			</tr>
+			<tr>
+				<td>Lectures Commence (weeks 1-9)</td>
+				<td>24 Jul - 22 Sep 2023</td>
+			</tr>
+			<tr>
+				<td>Last day to enrol/add subjects yourself</td>
+				<td>04 Aug 2023</td>
+			</tr>
+			<tr>
+				<td>Last day to enrol/add subjects with Head of Students approval</td>
+				<td>11 Aug 2023</td>
+			</tr>
+			<tr>
+				<td><strong>CENSUS DATE<br></strong>
+					• Fees due<br>• Last day to withdraw from subject/s without paying for them<br>
+					• HECS/FEE HELP debt reporting date<br>
+					• Last day to change HECS/FEE HELP billing option<br><br>
+					<a href="https://uowedu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012659">
+						Learn more about Census date ></a><br><br></td>
+				<td>31 Aug 2023<br></td>
+			</tr>
+			<tr>
+				<td>Student Services and Amenities Fees Due</td>
+				<td>01 Sep 2023</td>
+			</tr>
+		</tbody>
+		</table>
+		<br>
+
+
+	<h1> Task 3 </h1>
+
+    	<table id="web-attacks-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Web Attacks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+					1. Brute Force Attack <br><br>
+					<img src="Brute force attack.png"> <br> <br>
+					Source: https://en.wikipedia.org/wiki/Brute-force_attack <br><br>
+				</td>
+                <td>A Brute Force Attack is where an attacker submits multiple passwords or passphrases until they eventually guess the correct entry. <br><br>
+					These attacks may be used when there is no option or possibility to use other weaknesses in a system.<br><br>
+					Longer passwords, passphrases and keys are much harder to guess than shorter ones, as there are more possibilities and variations to guess correctly. <br> <br>
+					(<a href="https://en.wikipedia.org/wiki/Brute-force_attack">Source: Wikipedia - Brute Force Attack</a>)</td>
+            </tr>
+            <tr>
+                <td>2. Computer Worm<br><br>
+					<img src="Computer worm.png"> <br><br>
+					Source: https://en.wikipedia.org/wiki/Computer_worm <br><br>
+				</td>
+                <td>A Computer Worm is a malware computer program that replicates itself to infect other computers. <br><br>
+					It uses a computer network to spread itself and relies on security failures to target and access computers. <br><br>
+					It will use the target computer as a host to scan and infect further computers. <br><br> 
+					(<a href="https://en.wikipedia.org/wiki/Computer_worm">Source: Wikipedia - Computer Worm Attack</a>)</td>
+            </tr>
+            <tr>
+                <td>3. Cryptojacking<br><br>
+					<img src="Cryptojacking.png"> <br><br>
+					Source: https://www.businesstoday.in/technology/internet/story/cryptojacking-attacks-rose-by-8500-per-cent-globally-in-2017-105549-2018-04-04 <br> <br>
+				</td>
+                <td>Cryptojacking is where a computer that is used to mine for cryptocurrency is exploted, usually through websites. <br> <br>
+					It is done against the crypto miner's will and while they are unaware that the cryptojacking is occuring. <br><br>
+					Prior to 2019, Coinhive was a type of software often used for this type of web attack, and the most targeted cryptocurrencies were privacy coins as they have hidden transaction histories. <br> <br>  
+					(<a href="https://en.wikipedia.org/wiki/Cryptojacking">Source: Wikipedia - Cryptojacking Attack</a>)</td>
+            </tr>
+            <tr>
+                <td>4. Denial of Service Attack<br><br>
+					<img src="Denial of service attack.png"><br><br>
+					Source: https://en.wikipedia.org/wiki/Denial-of-service_attack <br><br>
+				</td>
+                <td>Denial of Service Attacks are where the perpetrator tries to make a machine or network unavailable to users. <br><br>
+					The aim of the attack is to flood the machine or resource with many requests so the system is overloaded and prevents real requests from being actioned. <br><br>
+					In preventing these attacks, it is not sufficient to block a source of the request, as it is likely there will be requests of this nature coming from multiple sources. <br><br>  
+					(<a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">Source: Wikipedia - Denial of Service Attack</a>)</td>
+            </tr>
+            <tr>
+                <td>5. Insider Threat<br><br>
+					<img src="Insider threat.png"><br><br>
+					Source: https://en.wikipedia.org/wiki/Insider_threat <br><br>
+				</td>
+                <td>An Insider Threat is generally made against an organisation by the people working within the organisation. <br> <br>
+					This may include employees, former employees, contractors, associates or any other related person who may have inside information about the organisations internal security measures, data and computers. <br><br>
+					An example of such a threat may include fraud, theft of information/data, theft of intellectual property or sabotaging computers and systems.<br><br> 
+					(<a href="https://en.wikipedia.org/wiki/Insider_threat">Source: Wikipedia - Insider Threate Attack</a>)</td>
+            </tr>
+            <tr>
+                <td>6. Malware<br><br>
+					<img src="Malware.png"><br><br>
+					Source: https://en.wikipedia.org/wiki/Malware <br><br>
+				</td>
+                <td>Malware is software designed to disrupt a computer, server, client, network, leak private information, gain unauthorised access to information systems etc. <br><br>
+					Malware can include subtypes of other web attacks such as viruses, worms, trojan horses, ransomeware etc. <br><br>
+					Malware is rapidly increasing each year and contributes substantially to financial crime around the world. Cybercrime was anticipated to cost USD $6 Trillion in 2021. <br><br> 
+					(<a href="https://en.wikipedia.org/wiki/Malware">Source: Wikipedia - Malware Attack </a>)</td>
+            </tr>
+            <tr>
+                <td>7. Phishing <br><br>
+				<img src="Phishing.png"> <br><br>
+				Source: https://www.propertycasualty360.com/2019/05/24/how-effective-employee-education-and-training-combats-phishing-attack-risk-414-155823/?slreturn=20230719105106 <br><br>
+				</td>
+                <td>Phishing is a type of social engineering and scamming where attackers deceive people so that they hand over sensitive information or enable the attacker to install malware on their devices. <br><br>
+					In 2020, Phishing was the most common type of cybercrime performed by attackers. <br><br>
+					Types of Phishing include: Email phishing, spear fishing, whaling and CEO fraud etc. <br> <br>
+					(<a href="https://en.wikipedia.org/wiki/Phishing">Source: Wikipedia - Phishing Attack </a>)</td>
+            </tr>
+            <tr>
+                <td>8. Spoofing Attack<br><br>
+				<img src="Spoofing attack.png"><br><br>
+				Source: https://en.wikipedia.org/wiki/Spoofing_attack <br><br>
+				</td>
+                <td>Spoofing attacks are where a person or a program successfully identifies as another by providing false data to gain an illegitimate advantage. <br><br>
+					Examples of spoofing include Spoofing and TCP/IP and Domain Name Spoofing. <br><br>
+					Domain Name Spoofing is used to describe multiple classes of phishing attacks that depend on false or misrepresented internet domain names. This persuades users to visit a copy-cat website usually passing off as a legitimate website.<br><br>
+					(<a href="https://en.wikipedia.org/wiki/Spoofing_attack">Source: Wikipedia - Spoofing Attack </a>)</td>
+            </tr>
+            <tr>
+                <td>9. Trojan Horse <br><br>
+				<img src="Trojan horse.png"> <br><br>
+				Source: https://www.greekboston.com/culture/mythology/odysseus-trojan-horse/ <br><br>
+				</td>
+                <td>Trojan Horse includes any malware that misleads the user of its true intent by disguising itself as a standard program.<br><br>
+					They are generally circulating through a social engineering method. <br><br>
+					For example: a use is tricked into opening an email attachment or clicking on a fake advertisement. This then allows the attacker to have unauthorised access to the device and enables ransomeware attacks to occur. <br><br> 
+					(<a href="https://en.wikipedia.org/wiki/Trojan_horse_(computing)">Source: Wikipedia - Trojan Horse Attack </a>)</td>
+            </tr>
+            <tr>
+                <td>10. Zero Day <br><br>
+				<img src="Zero day.png"> <br><br>
+				Source: https://www.cloudsek.com/blog/a-guide-to-the-most-popular-zero-day-attacks <br><br>
+				</td>
+                <td>A Zero Day is a computer software vulnerability previously unknown to the owners or those who work alongside it. <br><br>
+					Until the vulnerability is mitigated, hackers can exploit it to expand the vulnerability to other devices, software or datasets. <br><br>
+					Once the owners or those who work alongside the software become aware of the vulnerability, they generally create a software patch or provide a workaround to avoid breaches and to mitigate the associated risks.<br><br>
+					(<a href="https://en.wikipedia.org/wiki/Zero-day_(computing)">Source: Wikipedia - Zero Day Attack </a>)</td>
+            </tr>
+        </tbody>
+    	</table>
+
+		<br>
+
+
+	<h1> Task 4 </h1>
+
+			<button id="colourchangecat" onclick="Cat()">Cat</button>
+			<button id="colourchangedog" onclick="Dog()">Dog</button>
+			<button id="colourchangefrog" onclick="Frog()">Frog</button>
+			<br>
+			<br>
+
+			<input type="text" id="display">
+			<p id="catmessage" style="display: none;"></p>
+			<p id="dogmessage" style="display: none;"></p>
+			<p id="frogmessage" style="display: none;"></p>
+			<br>
+
+			<img src="Cat Portrait.png" id="cat-img" style="display: none;">
+			<img src="Dog Portrait.png" id="dog-img" style="display: none;">
+			<img src="Frog Portrait.png" id="frog-img" style="display: none;">
+			<br>
+		
+	<br>
+
+	
+	<h1> Task 5 </h1>
+
+
+
+</body>
+
+</html>
